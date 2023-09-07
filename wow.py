@@ -1,5 +1,10 @@
-import pandas
-import csv
+
+import PyDictionary
+import json
+
+
+translate = PyDictionary.PyDictionary
+
 
 words_list = []
 
@@ -10,6 +15,23 @@ with open("hi.csv",mode="r") as data:
         words_list.append(words)
 
 
+translation = []
 
+num = 0
 
-print(words_list)
+for allWords in words_list:
+    word_mean = translate.meaning(allWords)
+    total_word = {
+        allWords: word_mean
+    }
+
+    translation.append(total_word)
+
+    num +=1
+
+    print(word_mean)
+
+print(translation)
+
+with open("hello.txt",mode="w") as data:
+    data.write(translation)

@@ -58,4 +58,17 @@ let swiperPortfolio = new Swiper(".testimonials__container", {
   },
 });
 
+// Modal
 
+const modal = document.querySelector(".msg__background"),
+  hideClass = "hidden",
+  orderBtn = document.querySelector(".order__button"),
+  closeBtn = document.querySelector(".close--btn");
+
+orderBtn.addEventListener("click", function () {
+  modal.classList.remove(hideClass);
+});
+
+closeBtn.addEventListener("click", function () {
+  modal.classList.add(hideClass);
+});

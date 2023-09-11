@@ -29,18 +29,26 @@
       </div>
       <div class="nav__holder">
         <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#products" class="nav__link">Products</a>
-          </li>
-          <li class="nav__item">
-            <a href="#testimonials" class="nav__link">Testimonials</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+          <a class="nav__item" href="#header">
+            <span  class="nav__link">Home</span>
+            <i class="fa-solid fa-home nav__icons"></i>
+          </a>
+          <a class="nav__item" href="#about">
+            <span href="#about" class="nav__link">About</span>
+            <i class="fa-solid fa-user nav__icons"></i>
+          </a>
+          <a class="nav__item" href="#products">
+            <span  class="nav__link">Products</span>
+            <i class="fa-solid fa-shopping-cart nav__icons"></i>
+          </a>
+          <a class="nav__item" href="#testimonials">
+            <span  class="nav__link">Testimonials</span>
+            <i class="fa-solid fa-message nav__icons"></i> 
+          </a>
+          <a class="nav__item" href="#contact">
+            <span  class="nav__link">Contact</span>
+            <i class="fa-solid fa-phone nav__icons"></i>
+          </a>
         </ul>
       </div>
     </nav>
@@ -437,21 +445,26 @@
 
             <div class="msg__information">
 
+              <h3 class="msg__title">
+                Hurry Up! 🏃‍♂️
+              </h3>
+
               <span class="msg__detail">
                 If you want to order a product, then click the order button to receive a 10% discount on your purchase.
                 Your purchased item will be delivered within the next 24 hours.  
               </span> 
 
-              <button class="order__button button">
-                Order <i class="fa-solid fa-arrow-right msg__icon"></i>
-              </button>
+              <div class="order__button ">
+                Order Now <i class="fa-solid fa-arrow-right msg__icon"></i>
+              </div>
 
             </div>
 
-          <div class="msg__background hidden">
+          <div class="msg__background hidden ">
+            <i class="fa-solid fa-times close--btn"></i>
+              
             <div class="msg__data">
 
-              
               
                 <div class="msg__info">
 
@@ -520,7 +533,44 @@
 
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__container container flex">
+
+
+        <div class="footer__brands">
+          
+        <div class="footer__content">
+          <a href="#" class="footer__link">  
+            <i class="fa-brands fa-facebook facebook footer__icon"></i> 
+            <span class="footer__msg ">
+              Like our page on Facebook</span>
+          </a>
+        </div>
+
+        <div class="footer__content">
+          <a href="#" class="footer__link">
+            <i class="fa-brands fa-twitter footer__icon"></i> 
+            <span class="footer__msg">
+              Follow us on Twitter</span>
+          </a>
+          </div>
+
+        <div class="footer__content">
+          <a href="#" class="footer__link">
+            <i class="fa-brands fa-whatsapp footer__icon"></i>
+            <span class="footer__msg">
+               Message us via Whatsapp</span>
+          </a>
+          </div>
+
+        </div>
+
+          <h6 class="copy">
+            &copy; Rose perfumes inc.
+          </h6>
+      </div>
+      
+    </footer>
     <a href="#header">
       <div class="scroll__top">
         <i class="fa-solid fa-arrow-up"></i>
